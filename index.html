@@ -20,12 +20,12 @@
     .mat-card{
       width: auto;
       height: auto;
-      margin: 10px;
+      margin: 15px;
       padding: 50px;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
-     border-radius: 16px;
-     border: 1px solid gray;   
+     border-radius: 15px;
+     border: 2px solid gray;   
   }
   .mat-card#first-card{
       padding: 0;
@@ -68,22 +68,33 @@ div#profile-background img{
     background-color: darkgrey;
   }
   .logo-experiencia{
-    float: left;
+    float:left
   }
   #proyecto{
     font-size: medium;
     color: darkgrey;
   }
-  h4{
-    color: rgb(83, 83, 241);
-  }
+#letragris{
+  font-weight:600;
+  color:grey;
+}
+h6{
+  font-size: x-large;
+  color:rgb(83, 83, 241);
+
+}
+#titulobarra{
+font-size: small;
+text-align: center;
+}
+
   </style>
   <body>
     <nav class="navbar navbar-light">
         <a class="navbar-brand" > <h5>Fernando de Mena</h5></a>
         <ul class="navbariconos">
-       <a href="https://www.linkedin.com/home"> <i class=".btn-sm fa-brands fa-linkedin fa-lg "></i></a>
-         <a href="https://twitter.com/home?lang=es"> <i class=".btn-sm fa-brands fa-twitter fa-lg"></i></a>
+       <a href="https://www.linkedin.com/home"> <i class=".btn-sm fa-brands fa-linkedin fa-2x "></i></a>
+         <a href="https://twitter.com/home?lang=es"> <i class=".btn-sm fa-brands fa-twitter fa-2x"></i></a>
         <button type="button" class="btn btn-outline-dark">Login</button>
         </ul>
       </div>
@@ -94,9 +105,11 @@ div#profile-background img{
         </div>
         <div id="info" style="padding: 10px;">
         <div id="info-img">
+          <div class="btn-edit" onclick="cambiar_parrafo()">
+            <i<i class="fa fa-pen float-start"></i> 
+          </div>   
             <img class="profile-image" src="fer.jpeg" alt=""></div>
-            <div class="btn-edit"><a href="#" class="btn-primary"><i class="fa-fapen" ></i></a></div>
-        </div>
+            
       
         <div class="row">
 
@@ -120,9 +133,9 @@ div#profile-background img{
       
           <div class="col-md-2">
              <ul id="info-details" style="list-style: none;">
-              <a id="logo" href="https://isioilchem.com/"><img src="isi.png"  alt="ISI Oil Field Chemicals"width="100" height="100">
+              <a  href="https://isioilchem.com/"><img src="isi.png"  alt="ISI Oil Field Chemicals"width="100" height="100">
                                   </a>  <H3>  ISI </H3>
-                      <a id="logo" href="https://www.ean.edu.ar/"><img src="EAN.jpg"  alt="EAN" width="120" height="120">
+                      <a  href="https://www.ean.edu.ar/"><img src="EAN.jpg"  alt="EAN" width="120" height="120">
                         </a> <h3> EAN </h3>
             </ul> 
             
@@ -157,6 +170,9 @@ div#profile-background img{
    <div class="logo-experiencia">
     <img src="isi.png" alt="ISI Oil Field Chemicals"width="100" height="100">
   </div>
+  <div class="btn-edit" onclick="()">
+    <i class="fa fa-pen float-end"></i>
+  </div> 
   <p id="profesion"> <span> <h4>Responsable RR.HH.</h4></p>
   <p id="puesto-jornada">ISI - <i>Jornada Completa</i></p>
   <p id="antiguedad"> Agosto 2019 - Actualidad 9 años y 9 meses</p>
@@ -164,34 +180,36 @@ div#profile-background img{
 </span>
   <h3>Educacion</h3>
   <div id="logo-experiencia">
+    <div class="btn-edit" onclick="cambiar_parrafo()">
+      <i class="fa fa-pen float-end"></i>
     <img src="EAN.jpg" alt="EAN"width="100" height="100">EAN
   </div>
-    <p id="profesion">Licenciado en Factor Humano</p>
-    <p id="antiguedad">2005-2010</p>
+  <p id="profesion">Licenciado en Factor Humano</p>
+  <p id="antiguedad">2005-2010</p> 
+  <div class="btn-edit" onclick="cambiar_parrafo()">
+   <i class="fa fa-pen float-end"></i>
+  </div>
     <div class="logo-experiencia"><img src="ENET 1.jpg" alt="ENET 1" width="50" height="50">ENET N°1 
     </div>
   <p id="profesion">Tecnico en computacion</h6></p>
   <p id="antiguedad">2000-2005</p>
-
 </div>
-
+  </div>
 
 
     <div class=" mat-card">
       <h3>Hard Skills & Soft Skills</h3>
-    
       
       <div class="container">
-      <div class="Tituloskills"><center><h6> Resolucion de Problemas</h6> </center></div>
+      <div class="Tituloskills"><p id="titulobarra"> Resolucion de Problemas</p></div>
       <div class="progress">
         <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
-    
-      <div class="Tituloskills"> <center> <h6>Diseño Paginas WEB</h6></center></div>
+      <div class="Tituloskills"><p id="titulobarra">Diseño Paginas WEB<p></div>
       <div class="progress">
         <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-      <div class="Tituloskills"> <center> <h6>Base de Datos</h6></center></div>
+      </div>    
+      <div class="Tituloskills"><p id="titulobarra">Base de Datos</p></div>
       <div class="progress">
         <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 15%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
@@ -201,10 +219,13 @@ div#profile-background img{
       <div class=" mat-card">
       
         <h3>Proyectos</h3>
-        <div>
+        <br>
+        <div class="container">
         <h6>E-Autos Antiguos </h6>
-        <p> Desarrollo de sitio web  Front End basado en Angular para la compra-venta de Autos </p>
+
+        <p id="letragris"> Desarrollo de sitio web  Front End basado en Angular para la compra-venta de Autos </p>
         </div>
+        
         </div>
   
   
